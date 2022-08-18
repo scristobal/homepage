@@ -22,24 +22,24 @@ Company: DataBeacon ([www.databeacon.aero](https://www.databeacon.aero "")).
 Duration: From January 2019 until present day.
 Responsibilities:
 * In charge of building all user-facing applications and backend services.
-	* Build single page applications (SPAs) using TypeScript and React-Redux-Nextjs.
-	* Develop REST APIs and WebSockets back-end services in either Nodejs or Go.
-	* Contribute to basic CI/CD pipelines using Azure DevOps.
-	* Help define UX and contributed to the UI design system using Figma and Storybook.
+* Build single page applications (SPAs) using TypeScript and React-Redux-Nextjs.
+* Develop REST APIs and WebSockets back-end services in either Nodejs or Go.
+* Contribute to basic CI/CD pipelines using Azure DevOps.
+* Help define UX and contributed to the UI design system using Figma and Storybook.
 * Responsible for building a team of software engineers, data engineers and data scientists.
-	* Establish best practices, workflows, tooling, linting, testing, pipelines and code style.
-	* Engineering team management and coordination.
-	* Support data engineering and machine learning teams with Python and Scala-Spark on DataBricks.
+* Establish best practices, workflows, tooling, linting, testing, pipelines and code style.
+* Engineering team management and coordination.
+* Support data engineering and machine learning teams with Python and Scala-Spark on DataBricks.
 ### Research Engineer
 Company: Innaxis R&D ([www.innaxis.org](https://www.innaxis.org "")).
 Duration: From October 2011 until December 2018.
 Responsibilities:
-- Responsible for data science and artificial intelligence research, solutions and platforms.
-	- Write scientific software using Python, C and Matlab-Simulink in the field of network optimization, data mining and knowledge discovery.
-	- Deploy, test and profile Machine Learning models on AWS using custom scripts on EC2.
 - Became Senior Research Engineer in December 2013 and Technical Director in June 2017.
-	- Principal investigator for data science international research projects.
-	- Scientific and technical writing, publications and conferences.
+- Responsible for data science and artificial intelligence research, solutions and platforms.
+- Write scientific software using Python, C and Matlab-Simulink in the field of network optimization, data mining and knowledge discovery for several European Comission projects. 
+- Deploy, test and profile Machine Learning models on AWS using custom scripts on EC2.
+- Principal investigator for data science international research projects.
+- Scientific and technical writing, publications and conferences.
 ### Associate Research Fellow
 School: Universität Wien.
 Duration: From October 2010 until September 2011.
