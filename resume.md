@@ -1,21 +1,16 @@
 # Samuel Cristobal, Software Engineer
 ## Contact
-- Email: [el.tobal@gmail.com](mailto:el.tobal@gmail.com "")
-* Phone: [+34 646 49 09 06](tel:+34-646-49-09-06)
-* Address: Calle Frontera, 10. 28240 Madrid, Spain
-* Links: 
-	* Github: [github.com/scristobal](https://github.com/scristobal "")
-	* Npm: [npmjs.com/~samuelsh](https://npmjs.com/~samuelsh "")
-	* LinkedIn: [linkedin.com/in/scristobal](https://linkedin.com/in/scristobal "")
-	* Twitter: [twitter.com/TypeSamuel](https://twitter.com/TypeSamuel "")
+Email: [el.tobal@gmail.com](mailto:el.tobal@gmail.com "")
+Phone: [+34 646 49 09 06](tel:+34-646-49-09-06)
+Address: Calle Frontera, 10. 28240 Madrid, Spain
+Links: Github: [github.com/scristobal](https://github.com/scristobal ""), npm: [npmjs.com/~samuelsh](https://npmjs.com/~samuelsh ""), LinkedIn: [linkedin.com/in/scristobal](https://linkedin.com/in/scristobal "") and Twitter: [twitter.com/TypeSamuel](https://twitter.com/TypeSamuel "")
 ## Summary
-In 2019, I co-founded DataBeacon and assumed the role of CTO. Since then, I have been working as a full-stack Software Engineer, writing mostly TypeScript, React, Go and Node.
-The company has grown to around ~20 employees, so it is time for me to move on and find new challenges possibly as an IC.
-Previously, I worked 7+ years as a Research Engineer, in data mining and network optimization with Python and C. I have a MSc. + BSc. with honours in Mathematics -majored in algebraic geometry and logic- and B.Eng. in Telecommunication systems, best record award 2005.
+In 2010, I graduated in Mathematics with major in Algebraic Geometry and Logic and spent two years doing academic research at international universities. Afterwards, I worked in data mining and network optimization during 7+ years as a Research Engineer. In 2019, I co-founded DataBeacon and assumed the role of CTO and Software Engineer. 
+Last 3+ years, I built DataBeacon’s technology and team. Today, the company has grown to around ~20 employees, and I am not interested in a pure managerial role, so it is time for me to move on and find new challenges. 
 ## Skills
-* Programming languages: TypeScript, React, Go, Node, Python, Scala and C.
-* Technologies: Next, tRPC, REST, WebSockets, Kafka, Redux, RKT, React Query, SWR, Zod, RxJS, SocketIO, MapboxGL, Turf, Recharts, sass, styled-components, Jest, Testing Library, Webpack, Nodejs, Express, Prisma, Postgres, KafkaJS, NextAuth, Auth0, jwt, gorilla/websocket, kafka-go, go-net/http, azure-go- sdk
-* Languages: English (IELTS 8.0, July 2021) and Spanish (first language).
+**Programming languages**: TypeScript, React, Go, Node, Python, Scala and C.
+**Technologies**: Next, tRPC, REST, WebSockets, Kafka, Redux, RKT, React Query, SWR, Zod, RxJS, SocketIO, MapboxGL, Turf, Recharts, sass, styled-components, Jest, Testing Library, Webpack, Nodejs, Express, Prisma, Postgres, KafkaJS, NextAuth, Auth0, jwt, gorilla/websocket, kafka-go, go-net/http, azure-go- sdk
+**Languages**: English (IELTS 8.0, July 2021) and Spanish (first language).
 ## Experience
 ### Software Engineer
 Company: DataBeacon ([www.databeacon.aero](https://www.databeacon.aero "")).
@@ -43,12 +38,21 @@ Responsibilities:
 ### Associate Research Fellow
 School: Universität Wien.
 Duration: From October 2010 until September 2011.
-Field: Algebraic geometry: finding intricate, singular geometries over finite fields with C.
+Topic: Algebraic geometry, finding intricate, singular geometries over finite fields with C.
 ### Assistant Intern
 School: Universidad Autonoma de Madrid.
 Duration: From October 2009 until September 2010.
-Field: Mathematical logic: model theory of formal systems with PROLOG.
+Topics: Mathematical logic, model theory of formal systems with PROLOG.
 ## Education
-* MSc Mathematics and applications. Graduated in 2010. Major: algebra and logic. School: Universidad Autonoma de Madrid.
-* BSc with honors in Mathematics. Major: algebra and logic. Graduated in 2009.  School: Universidad Complutense de Madrid.
-* BEng Telecommunications. Thesis: “Pseudo-random number generators based on discrete, chaotic attractors” with C. Graduated in 2005. School: Universidad Politecnica de Madrid.  
+### MSc Mathematics and applications. 
+School: Universidad Autonoma de Madrid.
+Graduated in 2010. 
+Major: algebra and logic. 
+### BSc with honors in Mathematics. 
+School: Universidad Complutense de Madrid.
+Major: algebra and logic. 
+Graduated in 2009.  
+### BEng Telecommunications. 
+School: Universidad Politecnica de Madrid.
+Graduated in 2005. 
+Thesis: “Pseudo-random number generators based on discrete, chaotic attractors” with C. 
