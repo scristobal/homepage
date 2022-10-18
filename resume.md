@@ -1,17 +1,27 @@
 # Samuel Cristobal, Software Engineer
-## Contact
-**Email**: [el.tobal@gmail.com](mailto:el.tobal@gmail.com "") **Phone**: [+34 646 49 09 06](tel:+34-646-49-09-06) 
-**Address**: Calle Frontera, 10. 28240 Madrid, Spain, Europe.
-[github.com/scristobal](https://github.com/scristobal ""), [npmjs.com/~samuelsh](https://npmjs.com/~samuelsh ""), [linkedin.com/in/scristobal](https://linkedin.com/in/scristobal ""),[twitter.com/TypeSamuel](https://twitter.com/TypeSamuel "")
+## Details
+**Email**: [el.tobal@gmail.com](mailto:el.tobal@gmail.com "") 
+**Phone**: [+34 646 49 09 06](tel:+34-646-49-09-06) 
+**Address**: Frontera, 10. 28240 Madrid, Spain, Europe.
+**GitHub**: [github.com/scristobal](https://github.com/scristobal ""), 
+**NPM**: [npmjs.com/~samuelsh](https://npmjs.com/~samuelsh ""), 
+**LinkedIn**: [linkedin.com/in/scristobal](https://linkedin.com/in/scristobal ""),
+**Twitter**: [twitter.com/TypeSamuel](https://twitter.com/TypeSamuel "")
 ## Summary
-In 2010, I graduated in Mathematics with major in Algebraic Geometry and Logic and spent two years doing theoretical research at international universities. Afterwards, I got into Data Mining and Network Optimization, worked 7+ years as a Research Engineer in a private research institute on internatinal projects. 
-In 2019, I co-founded DataBeacon and assumed the role of CTO and Software Engineer. The last 3+ years, I have built DataBeacon’s technology and team. 
-Today, the company has grown to around ~20 employees, and I am not interested in a pure managerial role, so it is time for me to move on and find new challenges.
+I graduated in Mathematics with major in Algebraic Geometry and Logic in 2010 and stayed two more terms at the universities of Madrid and Vienna as associate.
+
+From 2012 until 2019, I worked as a Research Engineer (promoted to senior in 2013 and director in 2017.) in a private research institute located in Madrid, our projects were funded by the EC in the fields of Data Mining, Graph Theory and network optimization. 
+
+In 2019, I moved to Innsbruck, co-founded DataBeacon and assumed the role of Software Engineer and CTO. DataBeacon is a B2B platform that provides Air Traffic Control as a service, ATCaaS.
+
+The last 3+ years, I have been building DataBeacon’s technology and team. The company serves a small group of early adopters, has two applications and multiple services in production, and has grown to around ~20 employees.
+
+I am a very technical, hands-on individual. Therefore the prospects of being a CTO of a mid-size company are not aligned with my interests. It is time for me to move on and find new challenges.
 ## Skills
-**Programming languages**: TypeScript, Go, Rust, Python, Scala and C.
+**Programming languages**: TypeScript, Go, Rust. Previously: Python, Scala and C.
 **Frontend**: React and Web Components with Lit. HTML5/CSS and SASS.
 **Backend**: REST APIs, Web Sockets. SQL, MongoDB and Redis. 
-**Languages**: English (IELTS 8.0, July 2021) and Spanish.
+**Languages**: English (IELTS 8.0, July 2021) and Spanish (native).
 ## Experience
 ### Software Engineer
 **Company**: DataBeacon ([www.databeacon.aero](https://www.databeacon.aero "")).
@@ -40,7 +50,7 @@ Principal investigator, network optimization and data mining.
 - Write scientific software using Python, C and Matlab-Simulink in the field of network optimization, data mining and knowledge discovery.
 - Deploy, test and profiling of Machine Learning models on AWS using custom scripts on EC2.
 - Scientific and technical writing, publications and conferences.
-###  Research Engineering
+### Research Engineering
 **Company**: Innaxis R&D ([www.innaxis.org](https://www.innaxis.org "")).
 **Duration**: From October 2011 until November 2013.
 **Responsibilities**:
@@ -48,19 +58,19 @@ Analysis of delay propagation on stochastic graphs.
 - Write scientific software using C and Matlab-Simulink in the field of network optimization and topology.
 - Participation in international research projects.
 - Scientific and technical writing, publications and conferences.
+## Education
 ### Associate Research Fellow
 **School**: Universität Wien.
 **Duration**: From October 2010 until September 2011.
 **Topic**: Research on algebraic geometry, singular geometries over finite fields.
-### Assistant Intern
-**School**: Universidad Autonoma de Madrid.
-**Duration**: From October 2009 until September 2010.
-**Topic**: Mathematical logic, model theory of formal systems with PROLOG.
-## Education
 ### MSc Mathematics and applications
 **School**: Universidad Autonoma de Madrid.
 **Duration**: From October 2009 until June 2010. 
 **Major**: Algebraic Geometry and Logic. 
+### Assistant Intern
+**School**: Universidad Autonoma de Madrid.
+**Duration**: From October 2009 until September 2010.
+**Topic**: Mathematical logic, model theory of formal systems with PROLOG.
 ### BSc with honors in Mathematics
 **School**: Universidad Complutense de Madrid.
 **Duration**: From October 2004 until June 2009.
