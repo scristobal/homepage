@@ -8,32 +8,38 @@
 **LinkedIn**: [linkedin.com/in/scristobal](https://linkedin.com/in/scristobal ""),
 **Twitter**: [twitter.com/TypeSamuel](https://twitter.com/TypeSamuel "")
 ## Summary
-I graduated in Mathematics with major in Algebraic Geometry and Logic in 2010 and stayed two more terms at the universities of Madrid and Vienna as associate.
+In 2010, I graduated in a double degree in Mathematics and Engineering with majors in Algebraic Geometry and Logic. Afterwards, I worked 4 more semesters at the universities of Madrid and Vienna as an associate.
 
 From 2012 until 2019, I worked as a Research Engineer (promoted to senior in 2013 and director in 2017.) in a private research institute located in Madrid, our projects were funded by the EC in the fields of Data Mining, Graph Theory and network optimization. 
 
-In 2019, I moved to Innsbruck, co-founded DataBeacon and assumed the role of Software Engineer and CTO. DataBeacon is a B2B platform that provides Air Traffic Control as a service, ATCaaS.
+In 2019, I moved to Innsbruck, co-founded DataBeacon and assumed the role of Software Engineer and CTO. DataBeacon is a B2B platform that provides Air Traffic Control as a service (ATCaaS) in countries with high air traffic growth. 
 
-The last 3+ years, I have been building DataBeacon’s technology and team. The company serves a small group of early adopters, has two applications and multiple services in production, and has grown to around ~20 employees.
+The last 3+ years, I have been building DataBeacon’s technology and team. The company serves a small group of early adopters with applications and services in production and demos. The team has grown to around ~20 employees.
 
-I am a very technical, hands-on individual. Therefore the prospects of being a CTO of a mid-size company are not aligned with my interests. It is time for me to move on and find new challenges.
+However, I am a very technical, hands-on individual. Therefore the prospects of being a CTO of a mid-size company are not aligned with my interests. It is time for me to move on and find new challenges.
+
+## Interests:
+- Performant web applications: Rust, Web Assembly and Web Components.
+- Graphics: rasterized and ray tracing 3D engines  
+- Languages, grammars, parsers and tokenizers
+- Pixel art and 8 bit
+
 ## Skills
-**Programming languages**: TypeScript, Go, Rust. Previously: Python, Scala and C.
-**Frontend**: React and Web Components with Lit. HTML5/CSS and SASS.
-**Backend**: REST APIs, Web Sockets. SQL, MongoDB and Redis. 
-**Languages**: English (IELTS 8.0, July 2021) and Spanish (native).
+**Programming languages**: TypeScript, Go and Rust. Previously: Python, Scala and C.
+**Frontend**: React, Web Components  and Web Assembly.
+**Backend**: REST APIs, Web Sockets and GraphQL.
+**Languages**: English (IELTS 8.0, July 2021), Spanish and basic German.
 ## Experience
-### Software Engineer
+### Software Engineer and CTO
 **Company**: DataBeacon ([www.databeacon.aero](https://www.databeacon.aero "")).
 **Duration**: From January 2019 until present day.
 **Responsibilities**:
-Complete lifecycle of user-facing applications. Integration with backend services. In charge of the engineering team.
-- Successfully designed, built and deployed multiple single page frontend applications using TypeScript, React Redux.
-- Improved reusability and performance of key components using Web Components with Lit and replaced critical hot paths with Rust and Web Assembly.
-- Notable contributions to the UX/UI and design system.
-- Architected, build and deployed REST APIs and Web Socket backends in NodeJS and Go.
-- Built a team of 8 software engineers, data engineers and data scientists from scratch.
-- Established best practices, workflows, tooling, linting, testing, CI/CD, DevOps and code style guidelines.
+Complete lifecycle of user-facing applications exposing CRUD operations on SQL, document and key-value databases and pub/sub over data streams. In charge of the engineering team.
+- Complete life cycle of single page frontend applications using TypeScript, React Redux.
+- Improved reusability and performance of key components using Lit - Web Components and replaced critical hot paths with Rust - Web Assembly.
+- Contributions to the UX/UI and design system.
+- Built REST APIs and Web Socket backends in NodeJS and Go.
+- Assembled an engineering team of 8. Established best practices, git stadard commits, semantic versioning, tooling, code style, static analysis, linting. Lay out the basis for CI/CD - DevOps and automated testing.
 ### Director Research Development Engineering
 **Company**: Innaxis R&D ([www.innaxis.org](https://www.innaxis.org "")).
 **Duration**: From June 2017 until December 2018.
