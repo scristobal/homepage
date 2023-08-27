@@ -11,24 +11,22 @@
 
         <script type="module" src="https://md-block.verou.me/md-block.js"></script>
 
-        <script type="module">
-            // remove the first line of the md-block
-            // it's the link to the md-block source
-
-            const mdBlock = document.querySelector('md-block');
-            const firstLine = mdBlock.getElementsByTagName('h1');
-            firstLine.remove();
-        </script>
-
         <title>Samuel Cristobal</title>
         <style>
             @font-face {
                 font-family: '3x3Mono';
                 src: url(./resources/MonkeyIsland-1990.ttf);
+                font-weight: normal;
+            }
+
+            @font-face {
+                font-family: 'Lucas';
+                src: url(./resources/lucasarts-scumm-outline.otf);
+                font-weight: normal;
             }
 
             html {
-                font-family: '3x3Mono';
+                font-family: 'Lucas';
                 background-color: #dfdfdf;
                 padding: 2rem;
             }
@@ -44,20 +42,27 @@
             }
 
             h1 {
-                color: white;
-                text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+                font-family: 'Lucas';
+                color: black;
+                font-size: 4rem;
+                font-weight: normal;
+                /* text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; */
+                /* -webkit-text-stroke: 1px black; */
+                /* -webkit-text-fill-color: white; */
                 margin-bottom: 0;
             }
 
             h2 {
-                font-size: large;
+                /* font-size: large; */
                 color: black;
+                font-size: 2rem;
                 margin-top: 0;
+                font-weight: 100;
                 /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
             }
 
             img {
-                height: 10rem;
+                height: 20rem;
                 image-rendering: auto;
                 image-rendering: crisp-edges;
                 image-rendering: pixelated;
@@ -78,10 +83,29 @@
                 flex-wrap: wrap;
             }
 
+            a {
+                font-family: '3x3Mono';
+                font-size: 1rem;
+                /* text-underline-offset: 2px; */
+                /* margin: 1rem; */
+            }
+
+            ul {
+                list-style-type: none;
+            }
+
             md-block {
                 max-width: 760px;
+                font-family: '3x3Mono';
                 font-size: small;
                 line-height: 1.5rem;
+            }
+
+            .links-container {
+                padding-top: 2rem;
+                display: flex;
+                flex-direction: row;
+                gap: 0.5rem;
             }
         </style>
     </head>
@@ -93,11 +117,14 @@
                 <div>
                     <h1>Samuel Cristobal</h1>
                     <h2>Software Engineer</h2>
-                    <a href="./resources/public_key">public key</a>
-                    <a href="https://linkedin.com/in/scristobal">linkedin</a>
-                    <a href="https://github.com/scristobal">github</a>
-                    <!-- <a href="https://twitter.com/TypeSamuel">twitter</a> -->
-                    <a href="https://npmjs.com/~samuelsh">npm</a>
+
+                    <div class="links-container">
+                        <a href="./resources/public_key">public key</a>
+                        <a href="https://linkedin.com/in/scristobal">linkedin</a>
+                        <a href="https://github.com/scristobal">github</a>
+                        <!--<li> <a href="https://twitter.com/TypeSamuel">twitter</a> </li>-->
+                        <a href="https://npmjs.com/~samuelsh">npm</a>
+                    </div>
                 </div>
             </section>
             <md-block src="/src/resume_public.md"></md-block>
