@@ -1,49 +1,106 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/png" href="/resources/favicon.png" />
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="/resources/favicon.png" />
-    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <title>Samuel Cristobal</title>
-    <style>
-        @font-face {
-            font-family: '3x3Mono';
-            src: url(./resources/MonkeyIsland-1990.ttf)
-        }
+        <script type="module" src="https://md-block.verou.me/md-block.js"></script>
 
-        html {
-            font-family: '3x3Mono';
-        }
+        <script type="module">
+            // remove the first line of the md-block
+            // it's the link to the md-block source
 
-        a {
+            const mdBlock = document.querySelector('md-block');
+            const firstLine = mdBlock.getElementsByTagName('h1');
+            firstLine.remove();
+        </script>
 
-            text-shadow: black 0px 0px 10px;
-        }
+        <title>Samuel Cristobal</title>
+        <style>
+            @font-face {
+                font-family: '3x3Mono';
+                src: url(./resources/MonkeyIsland-1990.ttf);
+            }
 
-        p {
-            text-shadow: black 0px 0px 10px;
-            font-size: larger;
-        }
-    </style>
-</head>
+            html {
+                font-family: '3x3Mono';
+                background-color: #dfdfdf;
+                padding: 2rem;
+            }
 
-<body>
-    <main class="container">
-        <p>Samuel Cristobal<br>Software Engineer <br>
-        <img src="./resources/samu_pixel.jpeg" /> <br>
-        <a href="./resources/public_key">public key</a><br>
-        <a href="https://linkedin.com/in/scristobal">linkedin</a><br>
-        <a href="https://github.com/scristobal">github</a><br>
-        <a href="https://twitter.com/TypeSamuel">twitter</a><br>
-        <a href="https://npmjs.com/~samuelsh">npm</a><br>
-        </p>
+            @media (max-width: 600px) {
+                html {
+                    margin: 0;
+                    padding: 0;
+                }
+                a {
+                    font-size: x-small;
+                }
+            }
 
-    </main>
+            h1 {
+                color: white;
+                text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+                margin-bottom: 0;
+            }
 
-</body>
+            h2 {
+                font-size: large;
+                color: black;
+                margin-top: 0;
+                /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+            }
 
+            img {
+                height: 10rem;
+                image-rendering: auto;
+                image-rendering: crisp-edges;
+                image-rendering: pixelated;
+                justify-self: right;
+            }
+
+            main {
+                /* height: 100vh; */
+                /* height: 100dvh; */
+                display: grid;
+                place-items: center;
+                align-items: center;
+            }
+
+            section {
+                display: flex;
+                justify-items: left;
+                flex-wrap: wrap;
+            }
+
+            md-block {
+                max-width: 760px;
+                font-size: small;
+                line-height: 1.5rem;
+            }
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <section>
+                <img src="./resources/portrait.png" />
+                <div>
+                    <h1>Samuel Cristobal</h1>
+                    <h2>Software Engineer</h2>
+                    <a href="./resources/public_key">public key</a>
+                    <a href="https://linkedin.com/in/scristobal">linkedin</a>
+                    <a href="https://github.com/scristobal">github</a>
+                    <!-- <a href="https://twitter.com/TypeSamuel">twitter</a> -->
+                    <a href="https://npmjs.com/~samuelsh">npm</a>
+                </div>
+            </section>
+            <md-block src="/src/resume_public.md"></md-block>
+        </main>
+    </body>
 </html>
