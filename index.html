@@ -13,40 +13,48 @@
 
         <title>Samuel Cristobal</title>
         <style>
+            :root {
+                --text--color: black;
+                --bg-color: #dfdfdf;
+            }
+            @media (prefers-color-scheme: dark) {
+                :root {
+                    --text--color: white;
+                    --bg-color: #1f1f1f;
+                }
+            }
+
             @font-face {
                 font-family: 'scumm';
                 src: url(./scumm.ttf);
-                font-weight: normal;
             }
 
             @font-face {
                 font-family: 'scumm-outline';
                 src: url(./scumm-outline.otf);
-                font-weight: normal;
             }
 
             body {
                 margin: 0;
+                color: var(--text--color);
             }
 
             html {
                 font-family: 'scumm';
-                background-color: #dfdfdf;
+                background-color: var(--bg-color);
             }
 
             h1 {
                 font-family: 'scumm-outline';
-                color: black;
                 font-size: 4rem;
                 font-weight: normal;
                 margin: 0;
             }
 
             h2 {
-                color: black;
                 font-size: 1.5rem;
                 margin-top: 0;
-                font-weight: 100;
+                font-weight: normal;
             }
 
             img {
@@ -55,8 +63,6 @@
                 image-rendering: crisp-edges;
                 image-rendering: pixelated;
                 justify-self: right;
-                filter: drop-shadow(-2px -2px 0 #000) drop-shadow(2px -2px 0 #000)
-                    drop-shadow(-2px 2px 0 #000) drop-shadow(2px 2px 0 #000);
                 padding: 1rem;
             }
 
@@ -82,9 +88,10 @@
             <section>
                 <h1>Samuel Cristobal</h1>
                 <h2>Software Engineer</h2>
-
-                <img src="./portrait.png" />
-
+                <picture>
+                    <source srcset="./portrait.apng" type="image/apng" />
+                    <img src="./portrait.png" type="image/png" />
+                </picture>
                 <p>
                     In 1989, I got my first computer a Sinclair Spectrum ZX +2, and a few years
                     later a 386 and learned QBasic, C and Turbo Pascal.
@@ -104,9 +111,9 @@
                     team.
                 </p>
                 <p>
-                    I enjoy programming challenges, like Leetcode or Advent of Code. Also graphics
+                    I enjoy programming challenges, like LeetCode or Advent of Code. Also graphics
                     and physics engines, algorithms and data structures, memory management, language
-                    theory and everything in between.
+                    and type theory and everything in between.
                 </p>
                 <p>
                     My favorite language is <span style="color: #ce412b">Rust</span> and I am most
