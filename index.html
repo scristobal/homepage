@@ -55,10 +55,12 @@
             img {
                 height: 15rem;
                 width: 15rem;
-                /* image-rendering: auto; */
+                image-rendering: auto;
                 image-rendering: -webkit-optimize-contrast;
                 image-rendering: crisp-edges;
                 image-rendering: pixelated;
+
+                /* Safari seems to support, but seems deprecated and does the same thing as the others. */
                 justify-self: right;
                 padding: 1rem;
             }
@@ -77,42 +79,78 @@
                 max-width: 40rem;
                 /* text-wrap: balance; */
             }
+
+            .two-column {
+                display: flex;
+            }
+
+            .dialog {
+                width: 25rem;
+            }
         </style>
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.10/dist/cdn.min.js"></script>
+
+        <script defer>
+            const sentences = [
+                'Hi there! my name is Samuel.',
+                'I my first computer was a Sinclair Spectrum ZX +2 from 1989.',
+                'Soon to be replaced by an all mighty intel 386.',
+                'I wrote my first programs in QBasic, and later learned C and Turbo Pascal.',
+                'I studied a double degree in Mathematics and Engineering.',
+                'Studied algebra and mathematical logic.',
+                'Finally I settled as a Software Engineer.',
+                'I enjoy programming challenges, like Leet Code or Advent of Code.',
+                'Also graphics and physics engines, algorithms and data structures, memory management, language and type theory and everything in between.',
+                'My favorite language is Rust and I am most exited about Web Assembly, WebGPU and Web Components.',
+            ];
+
+            const timePerCharacter = 50;
+
+            document.addEventListener('alpine:initialized', () => {
+                let index = 0;
+
+                function updateText() {
+                    const currentSentence = sentences[index];
+
+                    const dialogEvent = new CustomEvent('dialog:update', {
+                        detail: currentSentence,
+                    });
+
+                    document.dispatchEvent(dialogEvent);
+
+                    const wait = currentSentence.length * timePerCharacter;
+
+                    index = (index + 1) % sentences.length;
+
+                    setTimeout(() => updateText(), wait);
+                }
+
+                updateText();
+            });
+        </script>
     </head>
 
     <body>
         <main>
             <section>
-                <h1>Samuel Cristobal</h1>
-                <h2>Software Engineer</h2>
-                <picture>
-                    <source srcset="./portrait.apng" type="image/apng" />
-                    <img
-                        width="32"
-                        height="32"
-                        src="./portrait.png"
-                        type="image/png"
-                        alt="Samuel Cristobal in pixel art style" />
-                </picture>
-                <p>
-                    I got my first computer a Sinclair Spectrum ZX +2 in 1989. Soon to be replaced
-                    by an all mighty 80386. I wrote my first programs in QBasic, and later learned C
-                    and Turbo Pascal.
-                </p>
-                <p>
-                    I studied a double degree in Mathematics and Engineering. Soon after I worked in
-                    assistant positions in the algebra and logic departments across Europe. But
-                    finally I settled as a Software Engineer.
-                </p>
-                <p>
-                    I enjoy programming challenges, like Leet Code or Advent of Code. Also graphics
-                    and physics engines, algorithms and data structures, memory management, language
-                    and type theory and everything in between.
-                </p>
-                <p>
-                    My favorite language is <span style="color: #ce412b">Rust</span> and I am most
-                    exited about Web Assembly, WebGPU and Web Components.
-                </p>
+                <!-- <h1>Samuel Cristobal</h1> -->
+                <!-- <h2>Software Engineer</h2> -->
+                <div class="two-column">
+                    <picture>
+                        <source srcset="./portrait.apng" type="image/apng" />
+                        <img
+                            width="32"
+                            height="32"
+                            src="./portrait.png"
+                            type="image/png"
+                            alt="Samuel Cristobal in pixel art style" />
+                    </picture>
+                    <p
+                        class="dialog"
+                        x-data="{text: undefined}"
+                        @dialog:update.document="text=$event.detail"
+                        x-text="text"></p>
+                </div>
             </section>
         </main>
     </body>
