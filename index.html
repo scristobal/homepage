@@ -47,12 +47,10 @@
                 font-family: 'scumm-outline';
                 font-size: 4rem;
                 font-weight: normal;
-                margin: 0;
             }
 
             h2 {
                 font-size: 1.5rem;
-                margin-top: 0;
                 font-weight: normal;
             }
 
@@ -71,36 +69,26 @@
                 padding: 1rem;
             }
 
-            .animated-sprite-sheet {
+            #animated-sprite-sheet {
                 --frame-translation: calc(-1 * var(--sprite-size));
                 object-fit: cover;
                 object-position: 0 var(--frame-translation);
             }
 
             main {
-                display: grid;
-                place-items: center;
-                margin: 1.5rem;
-            }
-
-            .two-column {
                 display: flex;
+                flex-direction: column-reverse;
                 flex-wrap: wrap-reverse;
+                margin: 1.5rem;
+                align-items: center;
             }
 
-            .dialog {
-                width: 25rem;
-            }
-
-            @media (max-width: 720px) {
-                .dialog {
-                    min-height: 6rem;
-                    bottom: 0;
-                    align-content: flex-end;
-                }
+            #dialog {
+                max-width: 25rem;
+                min-height: 6rem;
+                align-content: flex-end;
             }
         </style>
-        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.10/dist/cdn.min.js"></script>
 
         <script defer>
             const sentences = [
@@ -118,17 +106,14 @@
 
             const timePerCharacter = 50;
 
-            document.addEventListener('alpine:initialized', () => {
+            document.addEventListener('DOMContentLoaded', () => {
+                let dialog = document.getElementById('dialog');
                 let index = 0;
 
                 function updateText() {
                     const currentSentence = sentences[index];
 
-                    const dialogEvent = new CustomEvent('dialog:update', {
-                        detail: currentSentence,
-                    });
-
-                    document.dispatchEvent(dialogEvent);
+                    dialog.innerText = currentSentence;
 
                     const wait = currentSentence.length * timePerCharacter;
 
@@ -143,43 +128,30 @@
 
         <script defer>
             const totalFrames = 7;
-            let currentFrame = 0;
+            let index = 0;
+            const speed = 500;
 
             document.addEventListener('DOMContentLoaded', () => {
-                const animatedImg = document.getElementsByClassName('animated-sprite-sheet');
-
-                const a = animatedImg[0];
+                const animatedImg = document.getElementById('animated-sprite-sheet');
+                const height = 15;
 
                 setInterval(() => {
-                    a.style.setProperty(
-                        '--frame-translation',
-                        `-${(currentFrame * 15).toFixed(0)}rem`
-                    );
-                    currentFrame = (currentFrame + 1) % totalFrames;
-                }, 500);
+                    const translation = `-${(index * height).toFixed(0)}rem`;
+                    animatedImg.style.setProperty('--frame-translation', translation);
+                    index = (index + 1) % totalFrames;
+                }, speed);
             });
         </script>
     </head>
 
     <body>
         <main>
-            <!-- <h1>Samuel Cristobal</h1> -->
-            <!-- <h2>Software Engineer</h2> -->
-            <div class="two-column">
-                <picture>
-                    <!-- <source srcset="./portrait.apng" type="image/apng" /> -->
-                    <img
-                        class="animated-sprite-sheet"
-                        src="./sprite_sheet.png"
-                        type="image/png"
-                        alt="Samuel Cristobal in pixel art style" />
-                </picture>
-                <p
-                    class="dialog"
-                    x-data="{text: undefined}"
-                    @dialog:update.document="text=$event.detail"
-                    x-text="text"></p>
-            </div>
+            <img
+                id="animated-sprite-sheet"
+                src="./sprite_sheet.png"
+                type="image/png"
+                alt="Samuel Cristobal in pixel art style" />
+            <p id="dialog"></p>
         </main>
     </body>
 </html>
